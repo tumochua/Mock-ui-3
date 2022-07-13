@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <h1>hello world</h1>
-    <div>{{ couter }}</div>
-    <button @click="handeClick">click me</button>
-    <div>{{ getCouter }}</div>
+    <header-vue></header-vue>
   </div>
 </template>
 
 <script>
 import { mapState, mapGetters } from "vuex";
+import HeaderVue from "./component/header/Header.vue";
 export default {
   name: "App",
-  components: {},
+  components: {
+    HeaderVue,
+  },
   computed: {
     ...mapState({
       couter: (state) => state.couter,
@@ -32,8 +32,11 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px;
+  background: #ffffff;
 }
 </style>
