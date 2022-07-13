@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header-vue></header-vue>
-    <ProfileVue />
+    <!-- <ProfileVue /> -->
     <router-view></router-view>
   </div>
 </template>
@@ -9,12 +9,12 @@
 <script>
 import { mapState, mapGetters } from "vuex";
 import HeaderVue from "./component/header/Header.vue";
-import ProfileVue from "./component/Profile.vue";
+// import ProfileVue from "./component/Profile.vue";
 export default {
   name: "App",
   components: {
     HeaderVue,
-    ProfileVue,
+    // ProfileVue,
   },
   computed: {
     ...mapState({
