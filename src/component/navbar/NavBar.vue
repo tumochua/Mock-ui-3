@@ -24,7 +24,12 @@ export default {
 <style scoped lang="scss">
 .nav-ctn {
   .nav-bar-icon {
-    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background: #007bc3;
+    }
   }
 }
 </style>

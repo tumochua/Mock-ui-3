@@ -1,6 +1,6 @@
 const actions = {
-  increte({ commit }) {
-    commit("increte");
+  HANDLE_SHOW_DROPDOWN({ commit }, payload) {
+    commit("HANDLE_SHOW_DROPDOWN", payload);
   },
 };
 

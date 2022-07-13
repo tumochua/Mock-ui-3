@@ -157,5 +157,83 @@ const state = {
       ],
     },
   ],
+  system: [
+    {
+      id: 1,
+      title: "管理者機能",
+      icon: require("../assets/system/chevron-down.png"),
+      status: false,
+      personDesgin: [
+        {
+          id: 1,
+          title: "管理者・会社情報設定",
+        },
+        {
+          id: 2,
+          title: "システム基本設定",
+        },
+        {
+          id: 3,
+          title: "アカウント",
+        },
+        {
+          id: 4,
+          title: "グループ設定",
+        },
+        {
+          id: 5,
+          title: "承認ルート設定",
+        },
+        {
+          id: 6,
+          title: "権限設定",
+        },
+        {
+          id: 7,
+          title: "ポジションコード設定",
+        },
+        {
+          id: 8,
+          title: "パスワード・二段階認証設定",
+        },
+        {
+          id: 9,
+          title: "外部サービス連携",
+        },
+        {
+          id: 10,
+          title: "データクレンジング",
+        },
+        {
+          id: 11,
+          title: "通知設定",
+        },
+        {
+          id: 12,
+          title: "インポート・エクスポート",
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "マスタ・ラベル管理",
+      icon: require("../assets/system/chevron-down.png"),
+      status: false,
+      labelManagement: [
+        {
+          id: 1,
+          title: "発令マスタ",
+        },
+        {
+          id: 2,
+          title: "社員情報マスタ設定",
+        },
+        {
+          id: 3,
+          title: "ラベル設定",
+        },
+      ],
+    },
+  ],
 };
 export default state;
