@@ -1,4 +1,2 @@
-const state = {
-  couter: 10,
-};
+const state = {};
 export default state;
