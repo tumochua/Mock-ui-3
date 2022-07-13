@@ -56,10 +56,12 @@ export default {
     width: 10%;
   }
   .body-ctn-system {
-    width: 25%;
+    width: 15%;
+    // flex: 1;
   }
   .body-ctn-body-content {
-    width: 60%;
+    width: 75%;
+    // flex: 6;
   }
 }
 </style>
