@@ -1,5 +1,6 @@
 <template>
   <div class="body-ctn">
+    <h4>PEOPLE設定一覧</h4>
     <div v-for="getbodyContent in getbodyContents" :key="getbodyContent.id">
       <div class="body-carts">
         <div
@@ -114,6 +115,9 @@ export default {
           background: #f8f8f8;
           .cart-label-managements-title {
             align-self: center;
+          }
+          .cart-label-managements-icon {
+            margin-right: 10px;
           }
         }
         .cart-label-managements-description {

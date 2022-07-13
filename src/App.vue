@@ -52,11 +52,12 @@ export default {
 }
 .body-ctn {
   display: flex;
+  gap: 20px;
   .body-ctn-nav-bar {
-    width: 10%;
+    width: 8%;
   }
   .body-ctn-system {
-    width: 15%;
+    width: 17%;
     // flex: 1;
   }
   .body-ctn-body-content {
