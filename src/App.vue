@@ -1,27 +1,20 @@
 <template>
   <div id="app">
     <header-vue></header-vue>
-    <div class="body-ctn">
-      <nav-bar-vue class="body-ctn-nav-bar"></nav-bar-vue>
-      <system-vue class="body-ctn-system"></system-vue>
-      <body-content class="body-ctn-body-content"></body-content>
-    </div>
+    <ProfileVue />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import { mapState, mapGetters } from "vuex";
 import HeaderVue from "./component/header/Header.vue";
-import NavBarVue from "./component/navbar/NavBar.vue";
-import SystemVue from "./component/system/System.vue";
-import BodyContent from "./component/content/BodyContent.vue";
+import ProfileVue from "./component/Profile.vue";
 export default {
   name: "App",
   components: {
     HeaderVue,
-    NavBarVue,
-    SystemVue,
-    BodyContent,
+    ProfileVue,
   },
   computed: {
     ...mapState({
@@ -50,19 +43,19 @@ export default {
   padding: 10px;
   background: #ffffff;
 }
-.body-ctn {
-  display: flex;
-  gap: 20px;
-  .body-ctn-nav-bar {
-    width: 8%;
-  }
-  .body-ctn-system {
-    width: 17%;
-    // flex: 1;
-  }
-  .body-ctn-body-content {
-    width: 75%;
-    // flex: 6;
-  }
-}
+// .body-ctn {
+//   display: flex;
+//   gap: 20px;
+//   .body-ctn-nav-bar {
+//     width: 8%;
+//   }
+//   .body-ctn-system {
+//     width: 17%;
+//     // flex: 1;
+//   }
+//   .body-ctn-body-content {
+//     width: 75%;
+//     // flex: 6;
+//   }
+// }
 </style>

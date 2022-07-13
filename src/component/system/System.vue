@@ -21,6 +21,7 @@
                 :value="system.id"
                 v-for="system in getDataSystem.personDesgin"
                 :key="system.id"
+                class="system-body-dropdown-item"
               >
                 {{ system.title }}
               </div>
@@ -33,6 +34,7 @@
                 :value="system.id"
                 v-for="system in getDataSystem.labelManagement"
                 :key="system.id"
+                class="system-body-dropdown-item"
               >
                 {{ system.title }}
               </div>
@@ -73,6 +75,13 @@ export default {
       }
     }
     .system-body {
+      .system-body-dropdown-item {
+        padding: 10px;
+        &:hover {
+          background: #ffff;
+          cursor: pointer;
+        }
+      }
       .system-body-dropdown {
         display: flex;
         cursor: pointer;
