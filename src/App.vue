@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <header-vue></header-vue>
+    <nav-bar-vue></nav-bar-vue>
   </div>
 </template>
 
 <script>
 import { mapState, mapGetters } from "vuex";
 import HeaderVue from "./component/header/Header.vue";
+import NavBarVue from "./component/navbar/NavBar.vue";
 export default {
   name: "App",
   components: {
     HeaderVue,
+    NavBarVue,
   },
   computed: {
     ...mapState({
