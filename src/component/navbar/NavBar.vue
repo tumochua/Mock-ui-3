@@ -2,7 +2,7 @@
   <div class="nav-ctn">
     <div v-for="getNavBar in getNavBars" :key="getNavBar.id">
       <div class="nav-bar-icon">
-        <img :src="getNavBar.icon" />
+        <img :src="getNavBar.icon" alt="icon-nav" />
       </div>
     </div>
   </div>

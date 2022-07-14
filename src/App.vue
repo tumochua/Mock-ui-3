@@ -8,7 +8,7 @@
 
 <script>
 import { mapState, mapGetters } from "vuex";
-import HeaderVue from "./component/header/Header.vue";
+import HeaderVue from "@/component/header/Header.vue";
 // import ProfileVue from "./component/Profile.vue";
 export default {
   name: "App",
