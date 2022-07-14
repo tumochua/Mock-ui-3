@@ -36,6 +36,7 @@ const state = {
   bodyContent: [
     {
       id: 1,
+      title: "管理者機能",
       personDesgin: [
         {
           id: 1,
@@ -132,6 +133,7 @@ const state = {
     },
     {
       id: 2,
+      title: "マスタ・ラベル管理",
       labelManagement: [
         {
           id: 1,

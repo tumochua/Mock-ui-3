@@ -2,6 +2,7 @@
   <div class="body-ctn">
     <h4>PEOPLE設定一覧</h4>
     <div v-for="getbodyContent in getbodyContents" :key="getbodyContent.id">
+      <h2>{{ getbodyContent.title }}</h2>
       <div class="body-carts">
         <div
           v-for="contents in getbodyContent.personDesgin"
