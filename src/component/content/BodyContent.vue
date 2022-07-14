@@ -68,7 +68,7 @@ export default {
       .body-cart-item {
         width: 30%;
         margin-bottom: 32px;
-        margin-left: 12px;
+        margin-left: 10px;
         display: flex;
         border: 1px solid #dcdcdc;
         border-radius: 4px;
@@ -101,8 +101,11 @@ export default {
       margin-top: 20px;
       display: flex;
       // flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
+
       .cart-label-managements {
+        // margin-bottom: 32px;
+        // margin-right: 10px;
         .cart-label-managements-item {
           border: 1px solid #dcdcdc;
           border-radius: 4px;
