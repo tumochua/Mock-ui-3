@@ -67,6 +67,9 @@ export default {
 <style scoped lang="scss">
 .system-ctn {
   background: #f8f8f8;
+  border-left: 1px solid #dcdcdc;
+  padding: 12px 20px 0 12px;
+
   .systems {
     .system-header {
       display: flex;
