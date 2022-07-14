@@ -57,49 +57,19 @@ export default {
 
 <style scoped lang="scss">
 .body-ctn {
-  display: flex;
-  flex-direction: column;
-  .body-carts {
+  .body-ctn {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    .body-cart-item {
-      width: 27%;
+    flex-direction: column;
+    .body-carts {
       display: flex;
-      border: 1px solid #dcdcdc;
-      border-radius: 4px;
-      cursor: pointer;
-      &:hover {
-        transform: translateY(-2px);
-        box-shadow: 27px 26px 66px -6px rgba(0, 0, 0, 0.4);
-        -webkit-box-shadow: 27px 26px 66px -6px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: 27px 26px 66px -6px rgba(0, 0, 0, 0.4);
-      }
-      // padding: 20px;
-      .body-cart-item-header {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: -12px;
+      .body-cart-item {
+        width: 30%;
+        margin-bottom: 32px;
+        margin-left: 12px;
         display: flex;
-        border-bottom: 1px solid #dcdcdc;
-        padding: 20px;
-        background: #f8f8f8;
-        .body-carts-icon {
-          margin-right: 8px;
-        }
-        .body-carts-title {
-          align-self: center;
-        }
-      }
-      .body-carts-description {
-        padding: 20px;
-      }
-    }
-  }
-  .body-label-management {
-    margin-top: 20px;
-    display: flex;
-    // flex-wrap: wrap;
-    gap: 20px;
-    .cart-label-managements {
-      .cart-label-managements-item {
         border: 1px solid #dcdcdc;
         border-radius: 4px;
         cursor: pointer;
@@ -109,20 +79,55 @@ export default {
           -webkit-box-shadow: 27px 26px 66px -6px rgba(0, 0, 0, 0.4);
           -moz-box-shadow: 27px 26px 66px -6px rgba(0, 0, 0, 0.4);
         }
-        .cart-label-managements-header {
+        // padding: 20px;
+        .body-cart-item-header {
           display: flex;
           border-bottom: 1px solid #dcdcdc;
           padding: 20px;
           background: #f8f8f8;
-          .cart-label-managements-title {
+          .body-carts-icon {
+            margin-right: 8px;
+          }
+          .body-carts-title {
             align-self: center;
           }
-          .cart-label-managements-icon {
-            margin-right: 10px;
-          }
         }
-        .cart-label-managements-description {
+        .body-carts-description {
           padding: 20px;
+        }
+      }
+    }
+    .body-label-management {
+      margin-top: 20px;
+      display: flex;
+      // flex-wrap: wrap;
+      gap: 20px;
+      .cart-label-managements {
+        .cart-label-managements-item {
+          border: 1px solid #dcdcdc;
+          border-radius: 4px;
+          cursor: pointer;
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 27px 26px 66px -6px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: 27px 26px 66px -6px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 27px 26px 66px -6px rgba(0, 0, 0, 0.4);
+          }
+          .cart-label-managements-header {
+            display: flex;
+            border-bottom: 1px solid #dcdcdc;
+            padding: 20px;
+            background: #f8f8f8;
+            .cart-label-managements-title {
+              align-self: center;
+            }
+            .cart-label-managements-icon {
+              margin-right: 10px;
+            }
+          }
+          .cart-label-managements-description {
+            padding: 20px;
+          }
         }
       }
     }

@@ -26,17 +26,19 @@ export default {
 <style lang="scss">
 .body-ctn {
   display: flex;
-  gap: 20px;
+
   .body-ctn-nav-bar {
-    width: 8%;
+    width: 72px;
   }
   .body-ctn-system {
-    width: 17%;
+    width: 240px;
     // flex: 1;
   }
   .body-ctn-body-content {
-    width: 75%;
-    // flex: 6;
+    /* width: 75%; */
+    display: 1;
+    flex: 1;
+    padding: 45px 100px;
   }
 }
 </style>

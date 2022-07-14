@@ -32,15 +32,18 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  padding: 10px;
+  // padding: 10px;
   background: #ffffff;
 }
 // .body-ctn {
